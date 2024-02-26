@@ -46,6 +46,15 @@ turtle.pendown()
 turtle.color("white")
 turtle.write("STOP", align="center", font=("Arial", 40, "bold"))
 
+turtle.penup()
+turtle.goto(start_x + 5, start_y - 11) #had to play around with these numbers again
+turtle.pendown()
+turtle.width(10)
+for _ in range(NUM_SIDES):
+    turtle.color("white")
+    turtle.forward(LENGTH - 10)
+    turtle.right(ANGLE)
+
 # Hide the turtle and show the result
 turtle.hideturtle()
 turtle.done()
